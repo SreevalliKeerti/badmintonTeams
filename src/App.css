@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.jumbotron {
+    border-radius: 0px;
+}
+
+body {
+    background: #f8f9fa;
+}
+
+.card-container {
+  height: 95vh;
+  width: auto;
+  transform-style: preserve-3d;
+  box-sizing: border-box;
+  margin-left: 15%;
+  margin-bottom: -160%;
+  display: block;
+}
+.card-container.flipped  .front {
+  transform: rotateY(180deg);
+}
+.card-container.flipped  .back {
+  transform: rotateY(0deg);
+}
+.front, .back {
+  box-sizing: border-box;
+  background: #f8e0e0;
+  box-shadow: 5px 5px 3px #5f4d63;
+  padding: 10px;
+  position: absolute;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: -webkit-transform ease 500ms;
+  transition: transform ease 500ms;
+}
+.front {
+  font-size: 4vh;
+  width: 20vh;
+  height: 12vh;
+  padding-top: 2vh;
+  transform: rotateY(0deg);
+ /* front tile styles go here! */
+}
+.back {
+  background: #f8f6ea;
+  transform: rotateY(-180deg);
+  width: 20vh;
+  height: 12vh;
+  font-size: 3vh;
+ /* back tile styles go here! */
+}
+
+.footer {
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  position: static;
+}
