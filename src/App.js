@@ -18,9 +18,6 @@ function App(){
             <Card key={member.id} card={member} />
           ))}
         </div>
-        <footer className="footer bg-light mt-auto py-3">
-          Oracle India Pvt. Ltd.
-        </footer>
       </div>
     );
 }
